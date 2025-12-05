@@ -55,3 +55,35 @@ body{
 .addNew i{
     font-size: 3vh;
 }
+
+.modal-content{
+    background-color: rgb(235, 235, 235);
+}
+
+.modal-body{
+    display: flex;
+}
+
+.modal-body fieldset{
+    gap: 15px;
+}
+
+.modal-body fieldset input, .modal-body fieldset select{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: gainsboro;
+    outline: none;
+    box-shadow: 1px 1px 2px black;
+}
+
+
+/* Converte visualmente o input numérico em texto*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

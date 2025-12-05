@@ -75,9 +75,39 @@
     </table>
 
   </section>
+  
+  <a  href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-decoration-none text-reset">
+    <div class="addNew mx-auto fix d-flex align-items-center justify-content-center">
+      <i class="fa-solid fa-plus"></i>
+    </div>
+  </a>
 
-  <div class="addNew mx-auto fix d-flex align-items-center justify-content-center">
-    <i class="fa-solid fa-plus"></i>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Adicionar Serviço</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-center align-items-center">
+          <form id="servicos" name="servicos" method="post" action="">
+            <fieldset class="d-flex flex-column">
+              <input type="text" name="nomeServico" id="nomeServico" placeholder="Nome do serviço" class="text-center">
+              <input type="number" name="valorServico" id="valorServico" placeholder="Valor do serviço" class="text-center">
+              <select name="recorrencia" id="recorrencia" class="text-center">
+                <option value="0" disabled selected>Recorrência</option>
+                <option value="1">Mensal</option>
+                <option value="2">Anual</option>
+              </select>
+            </fieldset>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Salvar</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer class="footer text-center fixed-bottom">
