@@ -1,0 +1,21 @@
+*{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.main{
+    padding-top: 7vh;
+}
+
+.addNew{
+    width: 12vh;
+    height: 12vh;
+    background: #dddddd50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addNew i{
+    font-size: 10vh;
+}
