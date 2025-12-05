@@ -2,20 +2,56 @@
     font-family: "Ubuntu", sans-serif;
 }
 
+body{
+    background-color: rgb(221, 244, 255);
+}
+
 .main{
-    padding-top: 7vh;
+    padding-top: 9vh;
+}
+
+.despesas{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1.2vh;
+    text-align: center;
+}
+
+.despesas thead th{
+    font-size: 2vh;
+}
+
+.despesas tbody tr{
+    background-color: white;
+}
+
+.despesas tbody tr:hover{
+    background-color: gainsboro;
+}
+
+.despesas tbody tr td:first-child{
+    border-radius: 50px 0 0 50px;
+}
+
+.despesas tbody tr td:last-child{
+    border-radius: 0 50px 50px 0px;
 }
 
 .addNew{
-    width: 12vh;
-    height: 12vh;
-    background: #dddddd50;
+    width: 6vh;
+    height: 6vh;
+    background: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.addNew:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
 .addNew i{
-    font-size: 10vh;
+    font-size: 3vh;
 }
